@@ -1,0 +1,389 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+header {
+    display: flex;
+    background-color: rgb(124, 124, 223);
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+.Home {
+    text-decoration: none;
+    color: brown;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: x-large;
+    font-weight: 900;
+    border: 3px solid red;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.Wahl {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 15px;
+}
+
+.Wahl li {
+    border: 3px solid black;
+    padding: 5px;
+    font-size: large;
+
+}
+
+.Wahl li a {
+    text-decoration: none;
+    color: rgb(43, 0, 128);
+}
+
+.Wahl li:hover {
+    background: burlywood;
+}
+
+.Wahl li:hover {
+    transform: scale(1.2);
+}
+
+.meine {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    border-top: 2px solid black;
+    align-items: center;
+}
+
+.meine img {
+    width: 30px;
+}
+
+.meine .suche {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.meine .suche p {
+    font-size: larger;
+    text-decoration: rgb(50, 42, 165);
+}
+
+.meine .suche input:hover {
+    transform: scale(1.2);
+}
+
+
+
+.picture1 {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.picture1 img {
+    width: 1500px;
+    height: 500px;
+    object-fit: contain;
+}
+
+.picture1 .Öffnung_Kontakt {
+    border-left: 2px solid black;
+    padding: 20px;
+    width: 400px;
+}
+
+.Öffnung ul {
+    margin-top: 10px;
+}
+
+.picture1 .Öffnung_Kontakt h2 {
+    text-decoration: underline;
+    border: 2px solid red;
+    margin-bottom: 0px;
+}
+
+.Kontakt .tel {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    gap: 2px;
+    padding: 0px;
+}
+
+.Kontakt .email {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    gap: 2px;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.Kontakt img {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    border-radius: 15px;
+}
+
+.Kontakt p {
+    margin-left: 2px;
+}
+
+.email img {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    border-radius: 15px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container .section1 {
+    width: 600px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    background-color: darkkhaki;
+}
+
+.container .section1 img {
+    width: 300px;
+    object-fit: contain;
+}
+
+h2 {
+    color: brown;
+    margin: 30px;
+    text-decoration: underline;
+}
+
+.ausleien_buch1 {
+    width: 400px;
+    height: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 2px solid color(rec2020 red green blue);
+    background-color: burlywood;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.ausleien_buch1 img {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+
+h4 {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: beige;
+    text-align: center;
+    height: 30px;
+    font-size: larger;
+}
+
+h4:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+}
+
+.zurück {
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 10px;
+    margin: 50px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 50px;
+}
+
+.container2 p {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Standart {
+    text-align: center;
+    cursor: pointer;
+}
+
+.standorte_img {
+    text-align: center;
+}
+
+.standorte_img img {
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.nach_oben a {
+    text-decoration: none;
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: beige;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.Termine {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(155, 155, 137);
+}
+
+.Termine section {
+    width: 250px;
+    border-right: 2px solid black;
+    padding: 20px;
+}
+
+
+.Bücher_Preis {
+    height: 590px;
+    width: 1200px;
+    background-image: url(./bilder/Bücher_kaufen.jpg);
+    background-repeat: no-repeat;
+    margin: 30px;
+    padding: 15px;
+}
+
+.Bücher_Preis p {
+    font-size: x-large;
+    font-weight: 1000;
+}
+
+.bücherei img {
+    width: 400px;
+    height: 400px;
+}
+
+.bücherei p {
+    font-size: large;
+    font-weight: 600;
+}
+
+.Start {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.preis_liste {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: underline;
+    font-size: x-large;
+    font-weight: 800;
+    color: brown;
+}
+
+.Kinder {
+    width: 300px;
+    text-align: center;
+    border-right: 2px solid black;
+    padding: 30px;
+    margin: 30px;
+}
+
+.Kinder .preis {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.Kinder .kaufen {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    width: 150px;
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: 700;
+    background-color: cadetblue;
+}
+
+.b1 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.c1 {
+    border: 2px solid red;
+    border-radius: 30px;
+    width: 1000px;
+    font-size: x-large;
+    font-weight: 700;
+    background-color: rgb(255, 206, 127);
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    height: 50px;
+    padding: 40px;
+}
+
+.mehr_bücher {
+    font-size: x-large;
+    font-weight: 700;
+    color: brown;
+    text-align: center;
+    margin: 200px;
+}
+
+.back {
+    font-size: x-large;
+    font-weight: 900;
+    text-decoration: none;
+    color: brown;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(224, 220, 227);
+}
+
+footer img {
+    width: 485px;
+    height: 100px;
+
+}

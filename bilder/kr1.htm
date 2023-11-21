@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <script>//<![CDATA[
+      var s = false;
+      function l() {
+        setTimeout(f, 10000);
+        if (document.referrer) {
+          try {
+            var pm = /(^|&|\?)px=([^&]*)(&|$)/i;
+            var px = window.location.href.match(pm);
+            var rs = document.referrer;
+            if (px != null) {
+              if (rs.match(pm))
+                rs = rs.replace(pm, "$1px=" + px[2] + "$3");
+              else if (rs.indexOf("?") != -1)
+                rs = rs + "&px=" + px[2];
+              else
+                rs = rs + "?px=" + px[2];
+            }
+            history.replaceState({}, "Bing", rs);
+            window.addEventListener("pageshow", function(e) { if (e.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2)) window.location.reload(); });
+            s = true;
+            setTimeout(r, 10);
+            return;
+          } catch (e) {}
+        }
+        r();
+      }
+      function r() {
+        var u = "https://www.amazon.de/Lost-Fuseta-Portugal-Krimi-Leander-ermittelt/dp/3462051628/ref=asc_df_3462051628&mcid=8ca5a0df0e213bfa8dffca7bbbb2696b?tag=bingshoppin0b-21&linkCode=df0&hvadid=80814161461684&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=&hvtargid=pla-4584413736603076&psc=1";
+        if (s)
+          window.location.href = u;
+        else
+          window.location.replace(u);
+      }
+      function f() {
+        document.getElementById("fb").style.display = "block";
+      }
+      //]]>
+    </script>
+  </head>
+  <body onload="l()">
+    <div id="fb" style="display: none">
+      Please <a href="https://www.bing.com:443/aclick?ld=e83UPLy29Rf2Dd1BRus7yUvzVUCUy8FcgEoS9khn-et8qFbUiZAQxQjrelvT6ne9DqcZhay9MKGK52fs2--gBzr5b3WRQXQEunS_23oZHWMIt5s7rPcv3t4X3p8nqbqjhfspRIBBJYwEDHJ26ODcWUcJ9MeZHXoJqjmMbV_iW7qKbMmy70v5d8n7s-isBHrXEyYnBj-OQenFZ9xGHALTDlHx-w5SwW1TAkvDWh-aYwgEJS_cDlwS9L6Y1cDmFS2NMG1lOXqKvjStvYOX-N4MqmZmXuVrw&amp;u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmRlJTJmTG9zdC1GdXNldGEtUG9ydHVnYWwtS3JpbWktTGVhbmRlci1lcm1pdHRlbHQlMmZkcCUyZjM0NjIwNTE2MjglMmZyZWYlM2Rhc2NfZGZfMzQ2MjA1MTYyOCUyNm1jaWQlM2Q4Y2E1YTBkZjBlMjEzYmZhOGRmZmNhN2JiYmIyNjk2YiUzZnRhZyUzZGJpbmdzaG9wcGluMGItMjElMjZsaW5rQ29kZSUzZGRmMCUyNmh2YWRpZCUzZDgwODE0MTYxNDYxNjg0JTI2aHZuZXR3JTNkbyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYmUlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkJTI2aHZ0YXJnaWQlM2RwbGEtNDU4NDQxMzczNjYwMzA3NiUyNnBzYyUzZDE&amp;rlid=849e31cbd27518b1356a5498872c9b0d&amp;ntb=F">click here</a> if the page does not redirect automatically ...
+    </div>
+  </body>
+</html>
